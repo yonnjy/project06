@@ -1,13 +1,13 @@
 $(function () {
 
-    // $('.main_slide').slick({
-    //     arrows: false,
-    //     autoplay: true,
-    //     autoplaySpeed: 5000,
-    //     dots: true,
-    //     pauseOnHover: false,
-    //     pauseOnFocus: false,
-    // });
+    $('.main_slide').slick({
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+    });
 
     $('.main_br .arrows .left').on('click', function () {
         $('.brand_slide').slick('slickPrev');

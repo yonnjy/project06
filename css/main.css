@@ -115,18 +115,95 @@
 .header .header_r {
     display: flex;
     gap: 30px;
+    align-items: center;
     width: 200px;
 }
 
 /* --main_vi-- */
-
-.main_vi {
-    height: 100vh;
-    background: url(../images/bnr_v_acd02.jpg) no-repeat center center/cover;
+.main_vi .main_slide .itm {
+    position: relative;
+    height: 750px;
 }
 
-/* --main_re-- */
+.main_vi .main_slide .itm01 {
+    background: url(../images/vi01.jpg) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #888;
+}
 
+.main_vi .main_slide .itm02 {
+    background: url(../images/vi02.jpg) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #888;
+}
+
+.main_vi .main_slide .itm03 {
+    background: url(../images/vi03.jpg) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #888;
+}
+
+.main_vi .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.main_vi .slogan strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+    margin: 0 0 10px 0;
+}
+
+.main_vi .slogan h2 {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+.main_vi .slogan p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main_vi .slick-dots {
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translate(-270px, 0);
+}
+
+.main_vi .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.main_vi .slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.main_vi .slick-dots li.slick-active button {
+    background: #fff;
+}
+
+
+/* --main_re-- */
 .main_re ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -185,25 +262,33 @@
 
 .main_br .brand_slide .itm01 {
     background: url(../images/brand01.jpg) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #888;
 }
 
 .main_br .brand_slide .itm02 {
     background: url(../images/brand02.jpg) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #777;
 }
 
 .main_br .brand_slide .itm03 {
     background: url(../images/brand03.jpg) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #777;
 }
 
 .main_br .brand_slide .itm04 {
     background: url(../images/brand04.jpg) no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: #ccc;
 }
 
 .main_br .txt_box {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -90px);
     text-align: center;
     color: #fff;
 }
@@ -220,15 +305,22 @@
 }
 
 .main_br .btn {
-    padding: 5px 40px;
-    border: 1px solid #fff;
-    border-radius: 5px;
+    padding: 10px 0;
+    color: #555;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
+.main_br .btn:hover {
+    color: #fff;
+    background: #00a256;
 }
 
 .main_br .slick-dots {
     position: absolute;
-    top: 20px;
+    bottom: 20px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -244,7 +336,7 @@
     height: 5px;
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.3);
-    border: 1px solid #fff;
+    border: none;
     outline: none;
     cursor: pointer;
 }
@@ -258,11 +350,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 35px;
+    font-size: 40px;
     color: #fff;
-    max-width: 1100px;
+    max-width: 1120px;
     width: 100%;
+}
+
+.main_br .arrows i {
     cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.main_br .arrows i:hover {
+    font-size: 45px;
+    opacity: 1;
 }
 
 .main_br .arrows .right {
@@ -274,6 +376,7 @@
 .main_pro .tab_list {
     display: table;
     margin: 0 auto 30px auto;
+    border-spacing: 5px;
 }
 
 .main_pro .tab_list>li {
@@ -306,6 +409,7 @@
     display: flex;
     gap: 30px;
     text-align: center;
+    height: 570px;
 }
 
 .main_pro .pro_con ul {
@@ -497,7 +601,7 @@
 /* footer_sns */
 .footer .sns {
     display: flex;
-    gap: 30px;
+    gap: 23px;
     font-size: 20px;
 }
 
