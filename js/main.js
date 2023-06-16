@@ -1,5 +1,16 @@
 $(function () {
 
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        $('._ani_').each(function () {
+            if (sct + $(window).innerHeight() - 200 > $(this).offset().top) {
+                $(this).addClass('on');
+            } else {
+                $(this).removeClass('on');
+            }
+        });
+    });
+
     $('.main_slide').slick({
         arrows: false,
         dots: true,
